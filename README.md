@@ -28,3 +28,16 @@ Non lasciamoci spaventare dalla complessità apparente dell'esercizio, ma analiz
 1. Costruiamo del carosello una versione statica contenente solamente un'immagine. Di questa versione statica al momento opportuno commenteremo (oscureremo) alcuni elementi per poterli riprodurre dinamicamente in js. Potremo quindi usarli come "template".
 2. Scriviamo sempre prima per punti il nostro algoritmo in italiano per capire cosa vogliamo fare
 3. Al momento giusto (ihihhi starà a voi capire quale) rispondete a questa domanda: "Quanti cicli servono?"
+
+# Svolgimento
+
+- Richiama gli elementi contenitore per slide e frecce con delle variabili
+- Crea un array con tutte le immagini da inserire nel carosello
+- Crea un ciclo for
+  - Dai alla slide corrente un indice 0
+  - Recupera gli elementi nell'array
+  - Stampali nell'html element
+- Crea un evento sul bottone per andare avanti
+  - Sposta la classe "active" sulle slide successive per mandare avanti il carosello
+  - Limita l'indice della slide visualizzata al termine dell'array e poi di nuovo 0
+- Usa la stessa logica, ma invertita per il bottone per andare indietro nel carosello
