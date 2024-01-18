@@ -33,3 +33,29 @@ for (let i = 0; i < slides.length; i++) {
   slidesHtml += `<img src="./img/${singleSlide}" class="slide ${classActive}">`
 }
 
+
+//* Bottone DOWN
+
+arrowDown.addEventListener("click", function(){
+  // elimino classe active dalla slide attualmente mostrata
+  const currentSlide = document.querySelector(".slide.active");
+  currentSlide.classList.remove("active");
+
+  // Questo serve per far tornare il carousel alla slide iniziale 
+  if (slideShowed >= slides.length - 1) {
+    slideShowed = 0;
+  } else {
+    slideShowed++; //questo fa avanzare il carousel
+  }
+
+
+  // mostro la nuova slide, aggiungendo la classe active
+  
+  // array/HTML-collection
+  const slideImg = document.getElementsByClassName("slide");
+  
+  const newSlide = slideImg[slideShowed];
+  newSlide.classList.add("active");
+});
+
+
