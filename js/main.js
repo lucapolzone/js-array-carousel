@@ -59,3 +59,22 @@ arrowDown.addEventListener("click", function(){
 });
 
 
+//* Bottone UP
+
+arrowUp.addEventListener ("click", function(){
+  const currentSlide = document.querySelector(".slide.active");
+  currentSlide.classList.remove("active");
+
+  if (slideShowed <= 0) {
+    slideShowed = slides.length - 1;
+  } else {
+    slideShowed--; 
+  }
+  
+  // array/HTML-collection
+  const slideImg = document.getElementsByClassName("slide");
+
+  const newSlide = slideImg[slideShowed];
+  newSlide.classList.add("active");
+
+});
