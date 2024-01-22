@@ -34,6 +34,29 @@ for (let i = 0; i < slides.length; i++) {
 }
 
 
+//CAROUSEL TIMER 
+
+let carouselTimer = setInterval(function(){
+
+  // Rimuovo la classe "active" dalla slide corrente
+  const currentSlide = document.querySelector(".active");  
+  currentSlide.classList.remove("active");  
+
+  if (slideShowed >= slides.length - 1) {
+    slideShowed = 0;
+  } else {
+    slideShowed++;
+  }
+
+  //Aggiungo la classe "active" alla nuova slide
+  const allSlides = document.getElementsByClassName("slide");
+  const nextSlide = allSlides[slideShowed];
+  nextSlide.classList.add("active");
+}, 3000)
+
+
+
+
 //* Bottone DOWN
 
 arrowDown.addEventListener("click", function(){
