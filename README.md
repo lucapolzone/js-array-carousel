@@ -41,3 +41,25 @@ Non lasciamoci spaventare dalla complessità apparente dell'esercizio, ma analiz
   - Sposta la classe "active" sulle slide successive per mandare avanti il carosello
   - Limita l'indice della slide visualizzata al termine dell'array e poi di nuovo 0
 - Usa la stessa logica, ma invertita per il bottone per andare indietro nel carosello
+
+
+# Esercizio: Carosello Mono Array (22/01/2024)
+stessa nome repo: `js-array-carousel`
+
+**Riprendiamo in mano il carosello**
+
+## Milestone 0
+Se non è stato completato dalla scorsa volta, c'è un'altra occasione per farlo funzionare. 
+Al click delle frecce, dovrà essere mostrata l'immagine precedente o quella successiva
+
+## Milestone 1
+Aggiungere funzionalità sul carosello in modo che ogni 3 secondi lo slider scorra all'immagine successiva. Se non è stato già fatto, abilitare slider infinito (quando arrivo alla fine, ricomincio da capo, sia con l'interval che con i pulsanti).
+
+## Milestone 2
+Aggiungere il ciclo infinito del carosello (se non è stato fatto). Ovvero se è attiva la prima immagine e l'utente clicca la freccia per andare all'immagine precedente, dovrà comparire l'ultima immagine dell'array e viceversa.
+
+## Bonus 1
+Creare una funzione `goToSlide(n)` in grado di gestire il cambio di slide. Utilizzarla sul click delle frecce e nell'interval.
+
+## Bonus 2
+Lo scorrimento automatico delle immagini si blocca quando l'utente mette il mouse sopra il carosello e riparte quando il mouse esce fuori.
