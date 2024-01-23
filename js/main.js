@@ -54,9 +54,7 @@ let carouselTimer = setInterval(function(){
   newSlide.classList.add("active");
 }, 3000)
 
-let stopScroll = clearInterval(function () {
 
-});
 
 
 
