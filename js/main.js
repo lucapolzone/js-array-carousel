@@ -49,11 +49,14 @@ let carouselTimer = setInterval(function(){
   }
 
   //Aggiungo la classe "active" alla nuova slide
-  const allSlides = document.getElementsByClassName("slide");
-  const nextSlide = allSlides[slideShowed];
-  nextSlide.classList.add("active");
+  const slideImg = document.getElementsByClassName("slide");
+  const newSlide = slideImg[slideShowed];
+  newSlide.classList.add("active");
 }, 3000)
 
+let stopScroll = clearInterval(function () {
+
+});
 
 
 
